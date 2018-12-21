@@ -9,7 +9,7 @@ node 'master.puppet.vm' {
   include role::master_server
   file {'/root/README':
     ensure => file,
-    content => “Welcome to my ${fqdn}”,
+    content => "Welcome to my ${fqdn}",
     owner => 'root',
   }
 }
